@@ -1,0 +1,119 @@
+/* ---------------------------------- 404 ---------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=League+Spartan:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Orelo";
+    src: url("/fonts/OreloSemiWideMedium.woff2") format("woff2"),
+        url("/fonts/OreloSemiWideMedium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Avallon";
+    src: url("/fonts/Avallon.woff2") format("woff2"),
+        url("/fonts/Avallon.woff") format("woff");
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-logo-404 {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Orelo";
+    font-size: 2.4em;
+    text-transform: uppercase;
+    line-height: 100px;
+    color: #fff
+}
+
+.navbar-404 {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "League Spartan";
+    line-height: 100px;
+    color: #fff
+}
+
+.site-menu-404 {
+    display: flex;
+    font-size: 1em;
+}
+
+.menu-item-404 {
+    margin-left: 60px;
+    z-index: 9999;
+}
+
+@media (max-width: 900px) {
+    .navbar-404 {
+        display: none;
+    }
+}
+
+.header-container-404 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-404>span {
+    font-family: "Orelo";
+    font-size: 38vw;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.footer-404 {
+    position: fixed;
+    bottom: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-404 span {
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    font-family: "League Spartan";
+    font-weight: 400;
+    font-size: 1.4em;
+    transition: 1s;
+    color: #fff;
+    overflow: hidden;
+}
+
+.footer-wrapper-404:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    transition: 1s;
+}

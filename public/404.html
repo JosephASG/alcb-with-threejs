@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 page - ALCB</title>
+  <link rel="stylesheet" href="/css/404.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+
+<body>
+  <div class="container-404">
+    <div class="site-logo-404">A Little Christian Boy</div>
+    <div class="navbar-404">
+      <div class="site-info-404">Cristo viene pronto, prepárate</div>
+      <div class="site-menu-404">
+        <div class="menu-item-404">
+          <!-- <a href="https://alittlechristianboy.com/">Home</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="header-container-404">
+      <div class="header-404">
+        <span>4</span>
+        <span>0</span>
+        <span>4</span>
+      </div>
+    </div>
+
+    <div class="footer-404">
+      <span>Parece que estás perdido, regresar al <a href="https://alittlechristianboy.com/"><u>inicio</u></a></span>
+
+      <div class="footer-wrapper-404"></div>
+    </div>
+  </div>
+</body>
+<script>
+  gsap.from(".navbar-404 > div", 1.6, {
+    opacity: 0,
+    y: 60,
+    ease: Expo.easeInOut,
+    delay: 2.4,
+  });
+  gsap.from(".site-logo-404", 1.6, {
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut,
+    delay: 2.4,
+  });
+  gsap.from(".header-404 > span", 1.5, {
+    top: "-100vh",
+    ease: "bounce.out",
+    delay: 1,
+    stagger: 0.2,
+  });
+  gsap.to(".footer-404 span", 0.4, {
+    y: -40,
+    ease: Expo.easeInOut,
+    delay: 2.4,
+  });
+</script>
+
+</html>
